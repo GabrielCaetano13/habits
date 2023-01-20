@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    background-color: #09090A;
+    color: white;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 48px;
+    position: fixed;
+    width: 100%;
+    background-color: #09090A;
+}
+
+button {
+    padding: 16px 24px;
+    border-radius: 8px;
+    border: 1px solid #8b5cf6;
+    background-color: transparent;
+    color: white;
+    display: flex;
+    align-items: center; /* Só funciona pois o display: flex; */
+    gap: 12px;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 125%;
+}
+
+#form-habits {
+    display: flex;
+    padding: 182px 48px 48px;
+    width: fit-content;
+}
+
+.days {
+    display: flex;
+    gap: 48px;
+    margin-left: 32px;
+}
+
+.day {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.day div {
+    margin-bottom: 8px;
+    font-family: 'Roboto Mono';
+    font-size: 20px;
+    line-height: 125%;
+    color: #a1a1aa;
+    text-align: center;
+}
+
+.habits {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 58px;
+}
+
+.habit {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 64px;
+    height: 64px;
+    border: 2px solid #27272a;
+    border-radius: 8px;
+    background-color: #18181b;
+}
+
+/* pseudo-selector */
+input:checked {
+    background-color: #8b5cf6;
+    border: 2px solid #a78bfa;
+}
+
+/* Responsividade */
+@media (max-width: 570px) {
+    button div {
+        display: none;
+    }
+}
